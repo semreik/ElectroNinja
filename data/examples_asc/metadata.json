@@ -1,0 +1,103 @@
+[
+  {
+      "asc_path": "data/examples_asc/2paraller.asc",
+      "description": "Two resistors in parallel, each 2 ohms, with a DC source of 5V."
+  },
+  {
+    "asc_path": "data/examples_asc/series_resistors.asc",
+    "description": "A simple resistor network where three resistors (1kΩ, 2.2kΩ, and 4.7kΩ) are connected in series across a 5V DC voltage source. The total resistance is the sum of all resistors."
+  },
+  {
+    "asc_path": "data/examples_asc/mixed_series_parallel.asc",
+    "description": "A resistor network combining series and parallel resistors. Two 2kΩ resistors are in parallel, followed by a 5kΩ resistor in series, forming a mixed network, powered by 10V DC supply."
+  },
+  {
+    "asc_path": "data/examples_asc/ladder_resistor_network.asc",
+    "description": "A ladder resistor network alternating between series and parallel resistors, commonly used in digital-to-analog converters (DACs) and resistor ladder circuits, a dummy 1V DC supply is used."
+  },
+  {
+      "asc_path": "data/examples_asc/rc_filter.asc",
+      "description": "A simple RC filter with a 10 kΩ resistor and a 0.1 μF capacitor."
+  },
+  {
+      "asc_path": "data/examples_asc/voltage_divider.asc",
+      "description": "A DC voltage divider using a 1000Ω and a 2000Ω resistor to split a 1V DC voltage source."
+  },
+  {
+      "asc_path": "data/examples_asc/bridge_rectifier_with_cap_filter.asc",
+      "description": "A full-wave bridge rectifier circuit using four 1N914 diodes and a 1000μF capacitor filter to convert an 17V amplitude 60Hz AC input into a smoother DC output. The capacitor reduces ripple by filtering the pulsating DC produced by the diode bridge."
+  },
+  {
+      "asc_path": "data/examples_asc/rc_highpass.asc",
+      "description": "An RC high-pass filter using a 10 kΩ resistor and a 0.1 µF capacitor. The capacitor is in series with the input, while the resistor is connected from the output node to ground. This arrangement passes higher-frequency signals and attenuates those below approximately 159 Hz."
+  },
+  {
+      "asc_path": "data/examples_asc/rl_lowpass.asc",
+      "description": "An RL low-pass filter using a 10 mH inductor in series with the input and a 100 Ω resistor to ground. This arrangement attenuates high-frequency signals above roughly 1.59 kHz."
+  }
+,
+{
+  "asc_path": "data/examples_asc/rl_highpass.asc",
+  "description": "An RL high-pass filter circuit using a 100 Ω resistor in series with the input and a 10 mH inductor to ground. It passes high-frequency signals while attenuating those below approximately 1.59 kHz (cutoff frequency f_c = R/(2πL))."
+}
+,
+{
+  "asc_path": "data/examples_asc/series_rlc.asc",
+  "description": "A fundamental series RLC circuit using a 100 Ω resistor, a 10 mH inductor, and a 0.1 μF capacitor in series with a voltage source. The circuit demonstrates resonance at approximately 5 kHz."
+}
+,
+{
+  "asc_path": "data/examples_asc/parallel_rlc.asc",
+  "description": "A basic parallel RLC circuit using a 100 Ω resistor, a 10 mH inductor, and a 0.1 μF capacitor connected in parallel across a voltage source. The circuit illustrates resonance behavior at approximately 5 kHz."
+}
+,
+{
+  "asc_path": "data/examples_asc/rlc_bandpass.asc",
+  "description": "An RLC band-pass filter using a 100 Ω resistor, a 10 mH inductor, and a 0.1 μF capacitor. The circuit allows signals near 5 kHz to pass while attenuating frequencies outside this range."
+},
+{
+  "asc_path": "data/examples_asc/rlc_bandstop.asc",
+  "description": "An RLC band-stop (notch) filter using a 100 Ω resistor, a 10 mH inductor, and a 0.1 μF capacitor. The circuit attenuates signals near 5 kHz while allowing frequencies outside this range to pass."
+}
+,
+{
+  "asc_path": "data/examples_asc/capacitive_voltage_divider.asc",
+  "description": "A capacitive AC voltage divider using a 2.2 µF capacitor and a 1 µF capacitor to reduce AC voltage without significant power loss. This circuit is commonly used in high-voltage AC measurement and low-power applications, providing an approximate voltage division ratio of 1:3."
+}
+
+,
+{
+  "asc_path": "data/examples_asc/half_wave_rectifier.asc",
+  "description": "A half-wave rectifier circuit using a 1N4007 diode and a 470 µF capacitor to convert a 12V RMS AC signal into a pulsating DC output. The capacitor helps to smooth the output by reducing voltage ripple. This version does not include a dedicated load resistor."
+}
+,
+
+  {
+      "asc_path": "data/examples_asc/zener_regulator.asc",
+      "description": "A voltage regulator circuit using a Zener diode and resistor to maintain a constant DC voltage."
+  },
+  {
+      "asc_path": "data/examples_asc/led_current_limiter.asc",
+      "description": "A simple LED circuit with a current-limiting resistor to safely power an LED from a DC voltage source."
+  },
+  {
+      "asc_path": "data/examples_asc/rc_integrator.asc",
+      "description": "An RC integrator circuit that produces an output voltage proportional to the time integral of the input signal."
+  },
+  {
+      "asc_path": "data/examples_asc/rc_differentiator.asc",
+      "description": "An RC differentiator circuit that outputs a voltage proportional to the rate of change of the input signal."
+  },
+  {
+      "asc_path": "data/examples_asc/voltage_doubler.asc",
+      "description": "A voltage doubler circuit that uses diodes and capacitors to effectively double the peak voltage of an AC source."
+  },
+  {
+      "asc_path": "data/examples_asc/ac_coupling.asc",
+      "description": "An AC coupling circuit that employs a capacitor to block DC components while allowing AC signals to pass."
+  },
+  {
+      "asc_path": "data/examples_asc/diode_peak_detector.asc",
+      "description": "A diode peak detector circuit that uses a diode, resistor, and capacitor to capture the peak value of an AC signal."
+  }
+]
