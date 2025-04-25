@@ -1,0 +1,14 @@
+openai==0.28.0
+anthropic>=0.16.0
+pyautogui
+pillow
+PyQt5
+dotenv
+numpy
+faiss-cpu
+psutil
+PyMuPDF
+pywinauto
+pygetwindow
+typing
+qasync
