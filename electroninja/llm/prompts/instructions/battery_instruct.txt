@@ -1,0 +1,25 @@
+Voltage source in LTspice has a length of 80 and its initial arrangement is vertical with the top node (positive) being the reference node specified in the .asc file.
+The following are the description of the reference node location and the reference coordinate offset in each of its four rotationary arrangements with the .asc code to create the component with a desired amount of rotation.
+<x-ref> and <y-ref> should be calculated by performing the translation (x-offset,y-offset) specified for each arrangement on the actual coordinate that you want the reference node to be in.
+
+Position 1 (0 deg): reference point TOP, (0,-16)
+
+SYMBOL voltage <x-ref> <y-ref> R0
+
+Position 2 (90 deg): reference point RIGHT, (16,0)
+
+SYMBOL voltage <x-ref> <y-ref> R90
+WINDOW 0 -32 56 VBottom 2
+WINDOW 3 32 56 VTop 2
+
+Position 3 (180 deg): reference point BOTTOM, (0,16)
+
+SYMBOL voltage <x-ref> <y-ref> R180
+WINDOW 0 24 96 Left 2
+WINDOW 3 24 16 Left 2
+
+Position 4 (270 deg): reference point LEFT, (-16,0)
+
+SYMBOL voltage <x-ref> <y-ref> R270
+WINDOW 0 32 56 VTop 2
+WINDOW 3 -32 56 VBottom 2

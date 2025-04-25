@@ -1,0 +1,25 @@
+Capacitor in LTspice has a length of 64 and its initial arrangement is vertical with the top node (positive) being the reference node specified in the .asc file.
+The following are the description of the reference node location and the reference coordinate offset in each of its four rotationary arrangements with the .asc code to create the component with a desired amount of rotation.
+<x-ref> and <y-ref> should be calculated by performing the translation (x-offset,y-offset) specified for each arrangement on the actual coordinate that you want the reference node to be in.
+
+Position 1 (0 deg): reference point TOP, coordinates offset by (-16,0) of the actual location in LTspice
+
+SYMBOL cap <x-ref> <y-ref> R0
+
+Position 2 (90 deg): reference point RIGHT, coordinates offset by (0,-16) of the actual location in LTspice
+
+SYMBOL cap <x-ref> <y-ref> R90
+WINDOW 0 0 32 VBottom 2
+WINDOW 3 32 32 VTop 2
+
+Position 3 (180 deg): reference point BOTTOM, coordinates offset by (16,0) of the actual location in LTspice
+
+SYMBOL cap <x-ref> <y-ref> R180
+WINDOW 0 24 56 Left 2
+WINDOW 3 24 8 Left 2
+
+Position 4 (270 deg): reference point LEFT, coordinates offset by (0,16) of the actual location in LTspice
+
+SYMBOL cap <x-ref> <y-ref> R270
+WINDOW 0 32 32 VTop 2
+WINDOW 3 0 32 VBottom 2
